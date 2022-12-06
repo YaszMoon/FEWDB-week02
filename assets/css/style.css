@@ -5,6 +5,7 @@
   --margin-from-aside: 5px;
 }
 
+/* General Styles*/
 * {
   box-sizing: border-box;
 }
@@ -24,6 +25,7 @@ p {
   margin: 0;
 }
 
+/* Header Styles*/
 header {
   display: flex;
   width: 100%;
@@ -52,4 +54,22 @@ nav {
   width: 100%;
   justify-content: right;
   padding-right: 35px;
+}
+
+/* Hero Styles*/
+.hero-banner {
+  display: flex;
+  background-image: url(../images/02-hero-bg.jpg);
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.hero-banner div h2 {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  padding: 2px 3px;
+  margin: 0px 40px 20px 0px;
 }
