@@ -73,3 +73,41 @@ nav {
   padding: 2px 3px;
   margin: 0px 40px 20px 0px;
 }
+
+/* Grid styles*/
+.page-section {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  column-gap: 3em;
+}
+
+.page-subsection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
+
+#surfReport {
+  grid-column: span 2;
+  border: 1px solid black;
+}
+
+#ledWall {
+  border: 1px solid black;
+}
+
+#calculator {
+  border: 1px solid black;
+}
+
+#pastelPuzzles {
+  border: 1px solid black;
+}
+
+#runBuddy {
+  border: 1px solid black;
+}
+
+#contact div {
+  align-content: flex-end;
+}
