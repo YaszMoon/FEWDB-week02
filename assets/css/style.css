@@ -15,6 +15,7 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+  background-color: rgb(220, 208, 231);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -25,10 +26,22 @@ p {
   margin: 0;
 }
 
+.page-section h2 {
+  color: var(--dark-color);
+  border-right: 3px solid var(--dark-color);
+  display: flex;
+  justify-content: right;
+  padding-right: 15px;
+  margin: 30px;
+}
+
+.page-subsection {
+  margin: 30px 0px;
+}
+
 /* Header Styles*/
 header {
   display: flex;
-  width: 100%;
   background-color: var(--dark-color);
   padding: 10px;
 }
@@ -46,14 +59,15 @@ header a {
   text-decoration: none;
   border-bottom: 3px solid var(--light-color);
   margin: 0px 3px;
+  background-color: var(--dark-color);
 }
 
 nav {
   display: flex;
   align-items: center;
-  width: 100%;
   justify-content: right;
   padding-right: 35px;
+  background-color: var(--dark-color);
 }
 
 /* Hero Styles*/
@@ -84,30 +98,55 @@ nav {
 .page-subsection {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1em;
+  gap: 0.5em;
+}
+
+.page-subsection div {
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  padding: 65px;
 }
 
 #surfReport {
   grid-column: span 2;
+  background-image: url(../images/02-portfolio-4.jpg);
   border: 1px solid black;
 }
 
 #ledWall {
+  background-image: url(../images/02-portfolio-1.jpg);
   border: 1px solid black;
 }
 
 #calculator {
+  background-image: url(../images/02-portfolio-2.jpg);
   border: 1px solid black;
 }
 
 #pastelPuzzles {
+  background-image: url(../images/02-portfolio-3.jpg);
   border: 1px solid black;
 }
 
 #runBuddy {
+  background-image: url(../images/02-run-buddy.jpg);
   border: 1px solid black;
 }
 
+#work div{
+  display: flex;
+}
+#work h3, #work p {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  align-content:flex-end ;
+}
+
 #contact div {
-  align-content: flex-end;
+  padding: 40px 40px 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
