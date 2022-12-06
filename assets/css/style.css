@@ -51,6 +51,7 @@ header h1 {
   padding-right: 10px;
   background-color: var(--light-color);
   color: var(--dark-color);
+  white-space: nowrap;
 }
 
 header a {
@@ -64,6 +65,7 @@ header a {
 
 nav {
   display: flex;
+  width: 100%;
   align-items: center;
   justify-content: right;
   padding-right: 35px;
@@ -135,13 +137,10 @@ nav {
   border: 1px solid black;
 }
 
-#work div{
-  display: flex;
-}
 #work h3, #work p {
   background-color: var(--light-color);
   color: var(--dark-color);
-  align-content:flex-end ;
+  white-space: nowrap;
 }
 
 #contact div {
