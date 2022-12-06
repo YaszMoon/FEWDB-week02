@@ -140,7 +140,6 @@ nav {
 #work h3, #work p {
   background-color: var(--light-color);
   color: var(--dark-color);
-  white-space: nowrap;
 }
 
 #contact div {
