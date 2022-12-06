@@ -1,3 +1,10 @@
+/* Variables*/
+:root {
+  --light-color: rgb(168, 91, 168);
+  --dark-color: rgb(47, 37, 54);
+  --margin-from-aside: 5px;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -9,15 +16,40 @@ body {
   line-height: 1.5;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
 p {
   margin: 0;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  background-color: var(--dark-color);
+  padding: 10px;
+}
+
+header h1 {
+  padding-left: 35px;
+  padding-right: 10px;
+  background-color: var(--light-color);
+  color: var(--dark-color);
+}
+
+header a {
+  color: var(--light-color);
+  padding: 2px;
+  text-decoration: none;
+  border-bottom: 3px solid var(--light-color);
+  margin: 0px 3px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: right;
+  padding-right: 35px;
 }
