@@ -108,38 +108,34 @@ nav {
   background-position: center;
   display: flex;
   flex-direction: column;
-  padding: 65px;
+  padding: 65px 0px;
 }
 
 #surfReport {
   grid-column: span 2;
   background-image: url(../images/02-portfolio-4.jpg);
-  border: 1px solid black;
 }
 
 #ledWall {
   background-image: url(../images/02-portfolio-1.jpg);
-  border: 1px solid black;
 }
 
 #calculator {
   background-image: url(../images/02-portfolio-2.jpg);
-  border: 1px solid black;
 }
 
 #pastelPuzzles {
   background-image: url(../images/02-portfolio-3.jpg);
-  border: 1px solid black;
 }
 
 #runBuddy {
   background-image: url(../images/02-run-buddy.jpg);
-  border: 1px solid black;
 }
 
 #work h3, #work p {
   background-color: var(--light-color);
   color: var(--dark-color);
+  width: max-content;
 }
 
 #contact div {
