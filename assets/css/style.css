@@ -32,7 +32,7 @@ p {
   display: flex;
   justify-content: right;
   padding-right: 15px;
-  margin: 30px;
+  margin: 30px 0px;
 }
 
 .page-subsection {
@@ -96,6 +96,7 @@ nav {
   display: grid;
   grid-template-columns: 15% 85%;
   column-gap: 3em;
+  max-width: 90%;
 }
 
 .page-subsection {
@@ -107,6 +108,7 @@ nav {
 .page-subsection div {
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   padding: 65px 0px;
@@ -114,7 +116,7 @@ nav {
 }
 
 .page-subsection div:hover {
-  opacity: 0.7;
+  opacity: 0.4;
 }
 
 #surfReport {
@@ -138,7 +140,7 @@ nav {
   background-image: url(../images/02-run-buddy.jpg);
 }
 
-#work h3, #work p {
+.text-block {
   background-color: var(--light-color);
   color: var(--dark-color);
   width: max-content;
